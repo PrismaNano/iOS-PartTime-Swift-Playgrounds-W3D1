@@ -46,5 +46,4 @@ studentScores = ["Dan":100]
 studentScores = ["Cory":90]
 studentScores = ["Jeremy":80]
 
-print(studentScores[0])
 //: [Next](@next)

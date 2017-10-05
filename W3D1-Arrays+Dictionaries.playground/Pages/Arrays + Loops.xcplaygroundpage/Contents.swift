@@ -20,8 +20,7 @@ var thirdElement = fruits[2]
 //:
 //: Get the second element in fruits. ie) "Apple"
 
-
-
+var secondElement = fruits[1]
 
 
 //: You can add items at the end of the array using the append method
@@ -34,7 +33,7 @@ fruits.append("Tomato")
 //:
 //: Insert your favourite fruit at the start of the array. (We haven't covered this so do a quick google search)
 
-
+fruits.insert("grapes", at: 0)
 
 
 
@@ -51,10 +50,13 @@ var arrayOfBools = [Bool]()
 //: Add the numbers 10, 20, 60, 30, 40 to the array.
 
 
+var number = [Int]()
 
-
-
-
+number.insert(10, at: 0)
+number.insert(20, at: 1)
+number.insert(60, at: 2)
+number.insert(30, at: 3)
+number.insert(40, at: 4)
 //: ## Loops
 //: Loops are a way to execute the same piece of code multiple times
 //: A very practical usecase of loops is when you want to go through every element in an Array and do something with it
@@ -71,12 +73,17 @@ for fruit in fruits {
 
 //: ## Bonus Challenge
 //: Write a function that takes in an array of numbers and prints each number in that array
+var numbers = [3,4,5,7,8,4,4]
 
-
-
+func print(numbers:[Int]) {
+    
+    for number in numbers {
+        print("\(number)")
+    }
+}
 
 
 
 
 // Test it by uncommenting the below line of code:
-// print(numbers: numbers)
+ print(numbers: numbers)
